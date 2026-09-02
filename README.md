@@ -26,9 +26,9 @@ cp rules/<rule>.md .claude/rules/
 
 | 规则 | 分层 | 说明 |
 |------|------|------|
-| _TEMPLATE | — | 新规则模板 |
+| rules/engineering-rules.md | L0 元规则 | 规则工程化框架：三层结构 / 编码规范 / 五问准则 / 生命周期 |
 
-> 逐个审阅填充中。
+> 持续填充中：分层规则库（scoped / on-demand 实践）。
 
 ## 🤖 AI 可检索
 
