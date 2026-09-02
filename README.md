@@ -12,6 +12,10 @@
 - `rules-scoped/` — 按场景/目录生效的规则
 - `rules-on-demand/` — 按需触发的规则
 
+## 🧩 DeepSeek Harness（DSH）兼容
+
+本仓 rules 采用 AI 可执行的规则工程化格式（分层 / 按场景 / 按需触发），DeepSeek Harness 的插件模型可把 `rules/` 作为规则资产加载，约束 Agent 行为，无需改写。
+
 ## 📦 用法
 
 ```bash
