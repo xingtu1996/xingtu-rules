@@ -2,15 +2,15 @@
 
 > AI 协作规则（rules）方法论与可复用规则库，含 scoped / on-demand 分层实践。
 
-![CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey.svg)
+![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg) ![Rules](https://img.shields.io/badge/rules-1-informational.svg) ![Layers](https://img.shields.io/badge/layers-2%20active%20%2B%201%20planned-yellow.svg)
 
 ## 🎯 这是什么
 
 `xingtu-rules` 是行途开源矩阵的**规则资产仓**。沉淀"如何把团队规范 / 编码约定 / 流程要求变成 AI 可执行的 rules"方法论，并提供分层规则库：
 
 - `rules/` — 全局通用规则
-- `rules-scoped/` — 按场景/目录生效的规则
-- `rules-on-demand/` — 按需触发的规则
+- `rules-scoped/` — 按场景/目录生效的规则（待填充）
+- `rules-on-demand/` — 按需触发的规则（规划中，见 Roadmap）
 
 ## 🧩 DeepSeek Harness（DSH）兼容
 
@@ -49,8 +49,6 @@ cp rules/<rule>.md .claude/rules/
 完整条款见 [LICENSE](./LICENSE)。商业使用 / 出版合作请联系作者。
 
 ---
-
-> AI 辅助创作 · 内容基于真实工程实践
 
 ## 📁 目录结构
 
