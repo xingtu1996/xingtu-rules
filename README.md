@@ -1,10 +1,10 @@
-***REMOVED*** XingTu Rules · 规则工程化
+# XingTu Rules · 规则工程化
 
 > AI 协作规则（rules）方法论与可复用规则库，含 scoped / on-demand 分层实践。
 
 ![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg) ![Rules](https://img.shields.io/badge/rules-1-informational.svg) ![Layers](https://img.shields.io/badge/layers-2%20active%20%2B%201%20planned-yellow.svg)
 
-***REMOVED******REMOVED*** 🎯 这是什么
+## 🎯 这是什么
 
 `xingtu-rules` 是行途开源矩阵的**规则资产仓**。沉淀"如何把团队规范 / 编码约定 / 流程要求变成 AI 可执行的 rules"方法论，并提供分层规则库：
 
@@ -12,21 +12,21 @@
 - `rules-scoped/` — 按场景/目录生效的规则（待填充）
 - `rules-on-demand/` — 按需触发的规则（规划中，见 Roadmap）
 
-***REMOVED******REMOVED*** 🧩 DeepSeek Harness（DSH）兼容
+## 🧩 DeepSeek Harness（DSH）兼容
 
 本仓 rules 采用 AI 可执行的规则工程化格式（分层 / 按场景 / 按需触发），DeepSeek Harness 的插件模型可把 `rules/` 作为规则资产加载，约束 Agent 行为，无需改写。
 
-***REMOVED******REMOVED*** 📦 用法
+## 📦 用法
 
 ```bash
-***REMOVED*** 查看规则
+# 查看规则
 ls rules/
 
-***REMOVED*** 安装规则到项目
+# 安装规则到项目
 cp rules/<rule>.md .claude/rules/
 ```
 
-***REMOVED******REMOVED*** 📜 规则清单
+## 📜 规则清单
 
 | 规则 | 分层 | 说明 |
 |------|------|------|
@@ -34,11 +34,11 @@ cp rules/<rule>.md .claude/rules/
 
 > 持续填充中：分层规则库（scoped / on-demand 实践）。
 
-***REMOVED******REMOVED*** 🤖 AI 可检索
+## 🤖 AI 可检索
 
 每个规则文件遵循统一 frontmatter（name + description + 适用场景），供 AI 工具检索。
 
-***REMOVED******REMOVED*** 📄 许可证
+## 📄 许可证
 
 本仓库为**方法论/内容型资产**，采用 **CC BY-NC-SA 4.0**（署名-非商业使用-相同方式共享）授权。
 
@@ -50,22 +50,22 @@ cp rules/<rule>.md .claude/rules/
 
 ---
 
-***REMOVED******REMOVED*** 📁 目录结构
+## 📁 目录结构
 
 ```
-rules/           ***REMOVED*** 全局通用规则
-rules/_TEMPLATE/ ***REMOVED*** 新规则模板
-rules-scoped/    ***REMOVED*** 按场景/目录生效的规则
+rules/           # 全局通用规则
+rules/_TEMPLATE/ # 新规则模板
+rules-scoped/    # 按场景/目录生效的规则
 ```
 
-***REMOVED******REMOVED*** 🗺 Roadmap
+## 🗺 Roadmap
 
 - [ ] 分层规则库填充（scoped / on-demand 实践）
 - [ ] 规则方法论文档
 
 ---
 
-***REMOVED******REMOVED*** 深度内容与咨询
+## 深度内容与咨询
 
 完整方法论深度篇与实战案例 → 《行途 AI 工程化手册》（出版筹备中）
 深度答疑 / 定制陪跑 / 知识星球 → xingtutech@163.com
