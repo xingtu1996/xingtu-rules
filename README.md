@@ -2,7 +2,7 @@
 
 > AI 协作规则（rules）方法论与可复用规则库，含 scoped / on-demand 分层实践。
 
-![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg) ![Rules](https://img.shields.io/badge/rules-1-informational.svg) ![Layers](https://img.shields.io/badge/layers-2%20active%20%2B%201%20planned-yellow.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg) ![Rules](https://img.shields.io/badge/rules-1-informational.svg) ![Layers](https://img.shields.io/badge/layers-2%20active%20%2B%201%20planned-yellow.svg)
 
 ## 🎯 这是什么
 
@@ -40,13 +40,9 @@ cp rules/<rule>.md .claude/rules/
 
 ## 📄 许可证
 
-本仓库为**方法论/内容型资产**，采用 **CC BY-NC-SA 4.0**（署名-非商业使用-相同方式共享）授权。
+本仓库采用 **MIT License**。规则、方法论、模板可自由使用、修改与商用，保留版权声明即可。署名：行途 / xingtu1996。
 
-- **署名**：转载/引用需保留作者署名（行途 / xingtu1996）及出处
-- **非商业**：禁止用于商业用途（包括但不限于：商用课程、商业出版物、付费产品）
-- **相同方式共享**：演绎作品须以相同协议发布
-
-完整条款见 [LICENSE](./LICENSE)。商业使用 / 出版合作请联系作者。
+完整条款见 [LICENSE](./LICENSE)。
 
 ---
 
