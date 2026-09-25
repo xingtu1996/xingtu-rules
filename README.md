@@ -38,6 +38,17 @@ cp rules/<rule>.md .claude/rules/
 
 每个规则文件遵循统一 frontmatter（name + description + 适用场景），供 AI 工具检索。
 
+## 关于作者
+
+我是**行途**，一线技术人 + 仍在写代码。这些规则来自真实踩坑：每一条都对应一次事故或一次返工，不是凭空写的最佳实践。
+
+- 🔔 公众号 **「行途技术手记」**：微信搜索关注，看 AI 工程化落地实战
+- 🐙 GitHub：[@xingtu1996](https://github.com/xingtu1996)
+- 📦 仓库：[xingtu1996/xingtu-rules](https://github.com/xingtu1996/xingtu-rules)
+
+---
+
+
 ## 📄 许可证
 
 本仓库采用 **MIT License**。规则、方法论、模板可自由使用、修改与商用，保留版权声明即可。署名：行途 / xingtu1996。
