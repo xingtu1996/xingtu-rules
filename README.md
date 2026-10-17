@@ -42,7 +42,7 @@ cp rules/<rule>.md .claude/rules/
 
 我是**行途**，一线技术人 + 仍在写代码。这些规则来自真实踩坑：每一条都对应一次事故或一次返工，不是凭空写的最佳实践。
 
-- 🔔 公众号 **「行途技术手记」**：微信搜索关注，看 AI 工程化落地实战
+- 🔔 公众号 **「行途 XingTu」**：微信搜索关注，看 AI 工程化落地实战
 - 🐙 GitHub：[@xingtu1996](https://github.com/xingtu1996)
 - 📦 仓库：[xingtu1996/xingtu-rules](https://github.com/xingtu1996/xingtu-rules)
 
@@ -75,7 +75,7 @@ rules-scoped/    # 按场景/目录生效的规则
 ## 深度内容与咨询
 
 完整方法论深度篇与实战案例 → 《行途 AI 工程化手册》（出版筹备中）
-深度答疑 / 定制陪跑 / 知识星球 → 公众号「行途技术手记」留言
+深度答疑 / 定制陪跑 / 知识星球 → 公众号「行途 XingTu」留言
 
 ---
 
@@ -86,4 +86,4 @@ rules-scoped/    # 按场景/目录生效的规则
 - 𝕏 X：[@xingtu1996](https://x.com/xingtu1996)（AI工程化实战，build in public）
 - GitHub：[github.com/xingtu1996](https://github.com/xingtu1996)
 - 🌐 个人站：[xingtu1996.pages.dev](https://xingtu1996.pages.dev)
-- 📱 公众号：「行途技术手记」（深度长文 + 可抄作业的实战经验）
+- 📱 公众号：「行途 XingTu」（深度长文 + 可抄作业的实战经验）
