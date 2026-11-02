@@ -1,20 +1,33 @@
 # AGENTS.md — xingtu-rules
 
-## Repository role
-This repository maintains reusable, layered Agent rules.
+## 仓库职责
 
-## Source of truth
-Start with `README.md`, then inspect `rules/` and any more specific instructions in the directory being changed. The current code and tests take precedence over unverified README examples.
+本仓维护可复用、分层组织的 Agent 规则资产。
 
-## Project-specific guardrails
-Distinguish always-on rules from scoped/on-demand rules; do not claim planned directories are implemented. Keep rules short, actionable and free of private policy. Test examples against the target agent's supported rule-loading mechanism.
+## 信息真源
 
-## Shared capabilities
-Reusable Skills live in [xingtu-skills](https://github.com/xingtu1996/xingtu-skills), while shared rules, hooks and SDD assets are maintained in their respective repositories. A link to another repository is **not** automatic instruction inheritance or skill installation. Verify compatibility and use an explicit, reviewable install/version mechanism before invoking shared assets.
+先读 `README.md`，再检查 `rules/` 及拟修改目录中的更具体指引。代码与测试的当前状态优先于未经核实的 README 示例。
 
-## Change protocol
-1. Inspect existing repository instructions, source and relevant tests.
-2. For nontrivial work, write or update an SDD spec with acceptance criteria before implementation.
-3. Work on an isolated branch and open a reviewable PR. Do not change visibility, licenses, secrets, release settings or default branches as part of routine governance.
-4. Run only safe, applicable checks; report exact commands, results and unrun checks as NOT_RUN.
-5. Do not publish private Vault contents, internal paths, credentials or personal data. Keep changes reversible and record the commit SHA.
+## 项目约束
+
+- 区分常驻规则、按范围生效的规则和按需规则；不得把尚未建立的目录或能力写成已实现。
+- 规则应简短、可执行，不包含私有策略。
+- 针对目标 Agent 实际支持的规则加载机制验证示例；不能只凭目录或文件名推断规则已生效。
+- 可复用 Skills 存放在 [xingtu-skills](https://github.com/xingtu1996/xingtu-skills)；共享 Rules、Hooks 和 SDD 资产由各自仓库维护。链接到其他仓库不等于自动继承指令或安装技能。调用共享资产前，先核实兼容性，并采用明确、可审查的安装与版本管理方式。
+
+## 变更流程
+
+1. 检查现有仓库指引、源文件和相关测试。
+2. 非简单变更先编写或更新 SDD Spec，并写明验收条件，再开始实现。
+3. 在隔离分支工作并创建可审查的 PR。常规治理不得修改仓库可见性、许可证、密钥、发布设置或默认分支。
+4. 运行安全且适用的检查；准确报告命令、结果，以及标为 `NOT_RUN` 的未运行检查。
+5. 不得发布私人 Vault 内容、内部路径、凭据或个人信息。改动应可回退，并记录 commit SHA。
+
+## Codex 本地工作区与远端交付
+
+- 本仓在行途工作区的标准工程路径是 `github/xingtu-rules/`，即工作区根目录下的本目录。开始 XRULE 任务时，先在此目录核对 Git 根目录、工作区状态、`origin`、当前分支、上游分支和远端 PR。不要默认改用 `/tmp` 或重新 Clone。
+- 先读本仓 README、`rules/` 和当前目录指引，再按任务需要阅读 `docs/` 与 `specs/`。非简单变更先创建或更新 Spec。
+- 交付顺序：本地修改 → 适用的本地检查 → 隔离分支 commit → push → 查询远端分支和 PR 并比对 SHA。只有本地 HEAD、远端分支 SHA 和 PR head SHA 一致，PR 文件清单包含本次改动，且本地工作区干净时，才报告已经同步。
+- 如果标准本地仓不可用、`origin` 不匹配、网络失败或发现远端并发改动，应保留现场并报告证据；不要覆盖或重置改动。确需使用临时 Clone 时，先说明原因，并确保后续能安全同步回标准工作区。
+- 已有同目标 Draft PR 时优先复用其分支，并核对 changed files、base SHA 和 head SHA；不要重复创建 PR，也不要自动合并或发布。
+- 本仓是公开仓库：不得复制私人 Vault、客户或雇主材料、内部路径、凭据或未获授权的规则。脱敏不等于取得许可；规则文本也不是平台权限或安全沙箱。

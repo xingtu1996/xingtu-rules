@@ -14,7 +14,7 @@
 
 ## 🧩 DeepSeek Harness（DSH）兼容
 
-本仓 rules 采用 AI 可执行的规则工程化格式（分层 / 按场景 / 按需触发），DeepSeek Harness 的插件模型可把 `rules/` 作为规则资产加载，约束 Agent 行为，无需改写。
+DSH 默认 agent-instructions 读取 AGENTS.md/CLAUDE.md，但不解释 `.claude/rules/` 或 `@path`。本仓尚无已验证的 Rules 适配器；运行时 **NOT_RUN**。规则是上下文约束，不是强制权限。
 
 ## 📦 用法
 
@@ -36,7 +36,7 @@ cp rules/<rule>.md .claude/rules/
 
 ## 🤖 AI 可检索
 
-每个规则文件遵循统一 frontmatter（name + description + 适用场景），供 AI 工具检索。
+新增资产采用八字段自描述契约；现有元规则尚未迁移，不能声称全库统一 frontmatter。
 
 ## 关于作者
 
@@ -87,3 +87,14 @@ rules-scoped/    # 按场景/目录生效的规则
 - GitHub：[github.com/xingtu1996](https://github.com/xingtu1996)
 - 🌐 个人站：[xingtu1996.pages.dev](https://xingtu1996.pages.dev)
 - 📱 公众号：「行途技术手记」（深度长文 + 可抄作业的实战经验）
+
+## 工程资产定位与文档
+
+本仓定位为可解释、自描述、可组合、可验证、可版本化的工程 Rules 资产库与模板。Rules 不替代项目入口、Skills、Hooks 或 SDD。复制文件前核对 Agent 版本、目标目录、作用域与同名文件，不覆盖已有配置。
+
+- [项目自述](SELF.md)
+- [架构与八字段契约](docs/architecture.md)
+- [开源矩阵与组合](docs/ecosystem.md)
+- [研究依据](docs/references/research.md)
+- [官方加载机制](docs/references/coding-agents.md)
+- [任务验证报告](docs/XRULE-001-report.md)
