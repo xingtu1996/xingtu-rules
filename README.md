@@ -25,7 +25,8 @@ DSH 默认 agent-instructions 读取 AGENTS.md/CLAUDE.md，但不解释 `.claude
 ls rules/
 
 # 安装规则到项目
-cp rules/<rule>.md .claude/rules/
+mkdir -p .claude/rules
+cp -n rules/engineering-rules.md .claude/rules/engineering-rules.md
 ```
 
 ## 📜 规则清单
@@ -42,7 +43,7 @@ cp rules/<rule>.md .claude/rules/
 
 ## 关于作者
 
-我是**行途 XingTu**，一线技术人 + 仍在写代码。这些规则来自真实踩坑：每一条都对应一次事故或一次返工，不是凭空写的最佳实践。
+我是**行途 XingTu**，一线技术人 + 仍在写代码。本仓持续把工程实践中的问题、约束与验证结果整理为可审查的规则；具体规则是否经真实项目验证，请以各规则的来源与测试证据为准。
 
 - 🔔 公众号 **「行途技术手记」**：微信搜索关注，看 AI 工程化落地实战
 - 🐙 GitHub：[@xingtu1996](https://github.com/xingtu1996)
