@@ -7,10 +7,10 @@
 Worker（Codex CLI / Qwen Worker / 任何 CLI 宿主）启动时，**第一件事不是读文件，是确认 cwd**：
 
 ```
-pwd 输出 === /Users/lijiacheng/xingtu
+pwd 输出 === <行途工作空间根>
 ```
 
-不是就立即 `cd /Users/lijiacheng/xingtu`，不要在当前目录执行任何任务。
+不是就立即 `cd <行途工作空间根>`，不要在当前目录执行任何任务。
 
 ## 为什么是 P0
 
@@ -31,15 +31,15 @@ Worker 是文件读取式——cwd 不对 = 没读项目 AGENTS.md = 零行途�
 
 | 项 | 路径 |
 |---|---|
-| 项目根 AGENTS.md | `/Users/lijiacheng/xingtu/AGENTS.md` |
-| 视觉 SSoT | `/Users/lijiacheng/xingtu/DESIGN.md` |
-| 发布包规划 skill | `/Users/lijiacheng/xingtu/.agents/skills/publish-pack-planning/` |
+| 项目根 AGENTS.md | `<行途工作空间根>/AGENTS.md` |
+| 视觉 SSoT | `<行途工作空间根>/DESIGN.md` |
+| 发布包规划 skill | `<行途工作空间根>/.agents/skills/publish-pack-planning/` |
 | 踩坑记录 | `xingtu-learn/40-work-driven/W-03-Chat转Worker工作空间漂移.md` |
 | 默认工作区 | `~/Documents/Codex/` |
 
 ## 换设备/路径变更时
 
-本规则路径写死为 `/Users/lijiacheng/xingtu/`。换设备或路径变更时，**三处同步更新**：
+本规则路径写死为 `<行途工作空间根>/`。换设备或路径变更时，**三处同步更新**：
 1. 本文件（XRULE-002）
 2. 项目根 `AGENTS.md` §工作空间锚定
 3. 全局 `~/.codex/AGENTS.md`
